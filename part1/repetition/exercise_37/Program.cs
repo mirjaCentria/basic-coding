@@ -7,6 +7,7 @@ namespace exercise_37
     public static void Main(string[] args)
     {
       int sum = 0;
+      sum =sum + 1;
       // Write your code here:
 
     }
