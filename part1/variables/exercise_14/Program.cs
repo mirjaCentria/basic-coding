@@ -7,8 +7,8 @@ namespace exercise_14
     public static void Main(string[] args)
     {
       Console.WriteLine("Give me the truth!");
-      // Write your code here:
-
+      bool bVal = bool.Parse(Console.ReadLine());
+      Console.WriteLine(bVal.ToString());
     }
   }
 }
