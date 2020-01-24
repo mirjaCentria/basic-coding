@@ -7,8 +7,22 @@ namespace exercise_37
     public static void Main(string[] args)
     {
       int sum = 0;
-      // Write your code here:
+      int number = 0; 
 
+      // Write your code here:
+      string sPrompt ="Give a number:";
+      string sDone ="Total amount of numbers: ";
+
+      while (true )     
+      {
+        Console.WriteLine(sPrompt);
+        number = Convert.ToInt32(Console.ReadLine());  
+
+        if(number == 0) break;
+        sum = sum + 1;
+
+      }  
+      Console.WriteLine(sDone + sum);
     }
   }
 }
