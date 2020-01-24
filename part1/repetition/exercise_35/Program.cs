@@ -6,7 +6,14 @@ namespace exercise_35
   {
     public static void Main(string[] args)
     {
-      // Write your code here:
+       string sQuestion ="Give a number:";
+      int iAnswer = 0;
+
+      while (iAnswer != 42 )     
+      {
+        Console.WriteLine(sQuestion);
+        iAnswer = Convert.ToInt32(Console.ReadLine());  
+      }
 
     }
   }
