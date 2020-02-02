@@ -12,12 +12,20 @@ namespace exercise_47
       * Write a program, which prints integers from 1 to a number given by the user.
       ```console Where to? */
 
-        string prompt = "Where to?";
-        Console.WriteLine(prompt);
-        int nmbr = Convert.ToInt32(Console.ReadLine());
-        for (int i = 1; i < nmbr +1; i++)
+        string promptTo = "Where to?";
+        string promptFrom = "Where from?";
+
+        Console.WriteLine(promptTo);
+        int nmbrTo = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine(promptFrom);
+        int nmbrFrom = Convert.ToInt32(Console.ReadLine());
+
+        if(!(nmbrFrom > nmbrTo)) 
         {
-            Console.WriteLine(i);
+          for (int i = nmbrFrom; i < nmbrTo +1; i++)
+          {
+              Console.WriteLine(i);
+          } 
         } 
     }
   }
