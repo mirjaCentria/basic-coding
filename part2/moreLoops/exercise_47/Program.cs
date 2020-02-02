@@ -7,8 +7,18 @@ namespace exercise_47
     public static void Main(string[] args)
     {
 
-      // Write your code here:
-      
+      /*
+      ##### Section 1
+      * Write a program, which prints integers from 1 to a number given by the user.
+      ```console Where to? */
+
+        string prompt = "Where to?";
+        Console.WriteLine(prompt);
+        int nmbr = Convert.ToInt32(Console.ReadLine());
+        for (int i = 1; i < nmbr +1; i++)
+        {
+            Console.WriteLine(i);
+        } 
     }
   }
 }
