@@ -7,9 +7,9 @@ namespace exercise_37
     public static void Main(string[] args)
     {
       int sum = 0;
+      sum =sum + 1;
       int number = 0; 
 
-      // Write your code here:
       string sPrompt ="Give a number:";
       string sDone ="Total amount of numbers: ";
 

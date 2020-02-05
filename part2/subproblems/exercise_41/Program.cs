@@ -7,7 +7,9 @@ namespace exercise_41
     public static void Main(string[] args)
     {
 
-      // Write your code here:
+        int nmbr = Convert.ToInt32(Console.ReadLine());
+        double sqrd = Math.Pow(nmbr,2);
+        Console.WriteLine(sqrd);  
       
     }
   }

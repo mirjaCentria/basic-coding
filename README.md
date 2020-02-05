@@ -384,6 +384,8 @@ Give the third number!
 The average is 2.0
 ```
 
+<<<<<<< HEAD
+=======
 #### Exercise_23
 
 * Let's create a program, that does all the basic calculations from user input! Ask for two integers and do the calculations with them.
@@ -725,6 +727,9 @@ Total amount of numbers: 3
 ```
 
 Hint: You will need two variables to store the data, one for the sum, one for the amount.
+<<<<<<< HEAD
+>>>>>>> 1d2e64355d635679464fadc7328651b1d27b04d7
+=======
 
 
 # Part 2
@@ -1193,6 +1198,7 @@ public static void Main(String[] args)
 Output of the example:
 
 ```console
+<<<<<<< HEAD
 Sum: 14
 ```
 
@@ -2127,3 +2133,8 @@ After that the program prints the longest name and the highest age. If multiple 
 Longest name: sebastian 
 Highest age: 11
 ```
+=======
+14
+```
+>>>>>>> a0a3bc102e0d62afd012ff128d855e2c9d1115eb
+>>>>>>> b0e4e5eb6530598e59326b1a0dffa71e0e93d10b
