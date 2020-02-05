@@ -18,6 +18,8 @@ namespace exercise_64
       lines.Add("you and I have even heard of the quantum theory and atomic structures. Bohr came");
       lines.Add("up with his quantum theory while studying...");
 
+      Console.WriteLine(lines[lines.Count]);
+
       foreach (string line in lines)
       {
         Console.WriteLine(line);
