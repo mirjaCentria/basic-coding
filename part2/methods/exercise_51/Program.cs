@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 
 namespace exercise_51
@@ -20,3 +21,22 @@ namespace exercise_51
 
   }
 }
+=======
+﻿using System;
+
+namespace exercise_51
+{
+  class Program
+  {
+    public static void Main(String[] args)
+    {
+      // Call your method here:
+
+
+    }
+
+    // Write your method here:
+
+  }
+}
+>>>>>>> d639698b175307c9b8a4dd44d945b896f41cb5e6

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 
 namespace exercise_59
@@ -24,3 +25,21 @@ namespace exercise_59
 
   }
 }
+=======
+﻿using System;
+
+namespace exercise_59
+{
+  class Program
+  {
+    public static void Main(String[] args)
+    {
+      int answer = Greatest(2, 7, 3);
+      Console.WriteLine("Greatest: " + answer);
+    }
+
+    // Write your method here:
+
+  }
+}
+>>>>>>> d639698b175307c9b8a4dd44d945b896f41cb5e6
