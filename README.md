@@ -1211,10 +1211,13 @@ Output of the example:
 
 ```console
 <<<<<<< HEAD
+<<<<<<< HEAD
 14
 ```
 >>>>>>> a0a3bc102e0d62afd012ff128d855e2c9d1115eb
 =======
+=======
+>>>>>>> 1e235ec11632bf02fa2c13ec125ac69ace35e960
 Sum: 14
 ```
 
@@ -2157,6 +2160,13 @@ After that the program prints the longest name and the highest age. If multiple 
 Longest name: sebastian 
 Highest age: 11
 ```
+<<<<<<< HEAD
+=======
+14
+```
+>>>>>>> a0a3bc102e0d62afd012ff128d855e2c9d1115eb
+>>>>>>> b0e4e5eb6530598e59326b1a0dffa71e0e93d10b
+=======
 
 # Part 4
 
@@ -3002,6 +3012,7 @@ alicia
 mike  
 potato  
   
+<<<<<<< HEAD
 # Part 5
 
 ## Object oriented revision
@@ -3600,3 +3611,6 @@ If the user enters the same item multiple times, the print uses the item that wa
 
 Hint! It is probably smart to add each item to the list at most once -- compare the equality of the objects based on their identifiers.
 >>>>>>> d639698b175307c9b8a4dd44d945b896f41cb5e6
+=======
+>>>>>>> ac9c66e366a6cf596d51e50c9087fd2d177ad491
+>>>>>>> 1e235ec11632bf02fa2c13ec125ac69ace35e960

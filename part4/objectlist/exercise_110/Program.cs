@@ -7,7 +7,26 @@ namespace exercise_110
   {
     public static void Main(string[] args)
     {
-      // IMPLEMENT YOUR CODE IN HERE!
+      string answer;
+      string sQuestion = "Name:";
+      List<Item> itemList = new List<Item>();
+
+      while (true )     
+      {
+        Console.WriteLine(sQuestion);
+        answer = Console.ReadLine();  
+
+        if(answer == "") break;
+
+        Item newItem = new Item(answer);
+        itemList.Add(newItem);
+      }
+
+      foreach(Item item in itemList)
+      {
+         Console.WriteLine(item);
+
+      }
     }
   }
 }

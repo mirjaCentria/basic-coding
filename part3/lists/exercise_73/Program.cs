@@ -18,6 +18,14 @@ namespace exercise_73
         list.Add(input);
       }
 
+      int sum = 0;
+      foreach(int item in list)
+      {
+        sum = sum + item;
+      }
+
+      Console.WriteLine("Sum: " + sum);
+    
     }
   }
 }
