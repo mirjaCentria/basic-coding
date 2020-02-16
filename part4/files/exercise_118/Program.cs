@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Collections.Generic;
 
 namespace exercise_118
 {
@@ -14,8 +15,17 @@ namespace exercise_118
       // DO NOT TOUCH THE CODE ABOVE!
       // implement reading the file here;
       
+      List<String> names = new List<String>();
+      string[] lines ={};
 
-
+      if (File.Exists(file)) {  
+        lines = File.ReadAllLines(file);  
+      } 
+     
+      foreach (string item in lines)
+      {        
+        names.Add(item.TrimEnd(' '));
+      }
 
       // DO NOT TOUCH THE CODE BELOW!
       Console.WriteLine("");
