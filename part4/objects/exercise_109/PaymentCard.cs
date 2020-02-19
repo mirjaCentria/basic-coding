@@ -1,7 +1,6 @@
-using System;
-
-namespace exercise_109 
-{  public class PaymentCard
+namespace exercise_109
+{
+    public class PaymentCard
   {
     private double balance;
 

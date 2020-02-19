@@ -13,7 +13,7 @@ namespace exercise_115
       {
           line = Console.ReadLine();
           if(line == "end") break;
-          Console.WriteLine(Math.Pow(Convert.ToInt32(line),3));
+          Console.WriteLine(Math.Pow(Convert.ToInt32(line),3)); 
       }
     }
   }

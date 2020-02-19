@@ -9,7 +9,7 @@ namespace exercise_100
 
         public Debt(double initialBalance, double initialInterestRate)
         {
-            this.balance = initialBalance;
+            this.balance = initialBalance; 
             this.interestRate = initialInterestRate;
         }
 

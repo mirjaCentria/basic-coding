@@ -27,5 +27,6 @@ namespace exercise_108
       double coffee = 2.0;
       if(this.balance > coffee) this.balance = this.balance - coffee;
     }
+    
   }
 }

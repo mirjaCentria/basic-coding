@@ -13,7 +13,7 @@ namespace exercise_100
         mortgage.PrintBalance();
 
         // Wait 20 years
-        int years = 0;
+        int years = 0; 
         while (years < 20)
         {
           mortgage.WaitOneYear();

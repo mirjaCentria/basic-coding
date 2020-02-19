@@ -4,7 +4,7 @@ namespace exercise_97
 {
     public class Whistle
     {
-        private string sound;
+        private string sound; 
  
         public Whistle(string whistleSound)    
         {

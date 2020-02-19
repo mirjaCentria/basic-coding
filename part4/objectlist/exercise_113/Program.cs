@@ -17,8 +17,7 @@ namespace exercise_113
       string pagesQuestion = "Pages: ";
       string yearQuestion = "Publication year: ";
       string printQuestion = "What information will be printed? ";
-      string answer = "everything";
-       
+             
       while (true )     
       {
         Console.Write(nameQuestion);

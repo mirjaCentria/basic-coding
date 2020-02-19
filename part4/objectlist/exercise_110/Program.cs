@@ -7,7 +7,7 @@ namespace exercise_110
   {
     public static void Main(string[] args)
     {
-      string answer;
+      string answer; 
       string sQuestion = "Name:";
       List<Item> itemList = new List<Item>();
 

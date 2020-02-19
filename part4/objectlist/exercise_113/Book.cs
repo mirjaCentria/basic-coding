@@ -3,7 +3,7 @@ using System;
 namespace exercise_113
 {
     public class Book
-    {
+    { 
         public string title { get; set; }
         public int pages { get; set; }
         public int year { get; set; }

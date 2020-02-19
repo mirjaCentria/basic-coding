@@ -3,7 +3,8 @@ namespace exercise_103 {
     private string firstName;
     private string lastName;
 
-    public Agent(string firstName, string lastName) {
+    public Agent(string firstName, string lastName) 
+    {
       this.firstName = firstName;
       this.lastName = lastName;
     }

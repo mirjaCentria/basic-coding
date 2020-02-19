@@ -7,7 +7,8 @@ namespace exercise_96
  
         public Room(string classCode, int numberOfSeats)    
         {
-
+            this.code = classCode;
+            this.seats = numberOfSeats; 
         }
 
     }

@@ -28,6 +28,5 @@ namespace exercise_107
       this.balance = this.balance - coffee;
     }
 
-
   }
 }

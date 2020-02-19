@@ -7,7 +7,7 @@ namespace exercise_112
   {
     public static void Main(string[] args)
     {
-      // IMPLEMENT YOUR CODE IN HERE!
+      // IMPLEMENT YOUR CODE IN HERE! 
      // TelevisionProgram(string name, int duration)
 
       List<TelevisionProgram> list = new List<TelevisionProgram>();

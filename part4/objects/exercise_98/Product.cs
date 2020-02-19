@@ -6,11 +6,11 @@ namespace exercise_98
     {
         private double price;
         private int quantity;
-        private string name;
+        private string name; 
  
         public Product(string name, double price, int quantity)           
         {
-            this.name = name;
+            this.name = name; 
             this.price = price;
             this.quantity = quantity;
         }

@@ -8,7 +8,7 @@ namespace exercise_99
 
     public DecreasingCounter(int initialValue)
     {
-      this.value = initialValue;
+      this.value = initialValue; 
     }
 
     public void PrintValue()

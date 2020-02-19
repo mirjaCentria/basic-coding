@@ -36,7 +36,7 @@ namespace exercise_118
         string name = Console.ReadLine();
         if (name == "")
         {
-          break;
+          break; 
         }
 
         if (names.Contains(name))
