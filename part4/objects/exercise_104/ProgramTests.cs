@@ -35,6 +35,7 @@ namespace ProgramTests
       Multiplier multiplyByFour = new Multiplier(53);
       multiplyByFour.Multiply(2);
       int result = multiplyByFour.Multiply(14);
+ 
       Assert.AreEqual(1484, result, "Three times two should be six!");
     }
 

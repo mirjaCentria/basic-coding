@@ -6,13 +6,16 @@ namespace exercise_49
   {
     public static void Main(string[] args)
     {
-      // Call your method here:
- 
+      PrintPhrase(); 
     }
 
-    // Write your method here:
     public static void PrintPhrase() {
+      string testLine = "In a hole in the ground there lived a method";
+      Console.WriteLine(testLine);
+    }
 
+    
+    public static void Sum() {
     }
   }
 }

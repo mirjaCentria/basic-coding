@@ -6,8 +6,14 @@ namespace exercise_34
   {
     public static void Main(string[] args)
     {
-      // Write your code here:
+      string sQuestion ="Do you want to continue?";
+      string sAnswer = "";
 
+      while (sAnswer != "no" )     
+      {
+        Console.WriteLine(sQuestion);
+        sAnswer = Console.ReadLine();    
+      }
     }
   }
 }

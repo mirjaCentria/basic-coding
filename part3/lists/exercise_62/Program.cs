@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 
 
@@ -21,7 +21,7 @@ namespace exercise_62
       }
 
       // BEGIN SOLUTION
-      Console.WriteLine(list[0]);
+      Console.WriteLine(list[2]);
       // END SOLUTION
     }
 

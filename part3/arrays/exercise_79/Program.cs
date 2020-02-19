@@ -20,8 +20,17 @@ namespace exercise_79
 
       Console.WriteLine("Search for?");
       int searching = Convert.ToInt32(Console.ReadLine());
-
+      int foundAt = array.Length + 1;
       // Implement the search functionality here
+      for(int i = 0; i < array.Length; i++)
+      {
+        if(array[i] == searching) 
+        {
+          foundAt = i;
+          Console.WriteLine("{0} is at index {1}.", searching, i);
+        }        
+      }
+      if(foundAt > array.Length) Console.WriteLine("{0} was not found.", searching);
 
     }
 

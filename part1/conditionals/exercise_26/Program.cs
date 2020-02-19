@@ -6,7 +6,16 @@ namespace exercise_26
   {
     public static void Main(string[] args)
     {
-      // Write your code here:
+        string sLine1 = "Give your age:";
+        string sLine2 = "You´re old";
+
+        int iAge = 0;
+        int iLimit = 1900;
+       
+        Console.WriteLine(sLine1);
+        iAge = int.Parse(Console.ReadLine());
+
+        if(iAge < iLimit)  Console.WriteLine(sLine2);
 
     }
   }

@@ -6,9 +6,10 @@ namespace exercise_42
   {
     public static void Main(string[] args)
     {
-
-      // Write your code here:
-    
+        int nmbr1 = Convert.ToInt32(Console.ReadLine());
+        int nmbr2 = Convert.ToInt32(Console.ReadLine());
+        double sqroot = Math.Sqrt(nmbr1 +nmbr2);
+        Console.WriteLine(sqroot);     
     }
   }
 }
