@@ -38,12 +38,13 @@ namespace exercise_113
       Console.WriteLine();
       Console.Write(printQuestion);
       printanswer = Console.ReadLine(); 
+      Console.WriteLine("");
 
       if(printanswer == "everything")
       {      
         foreach(Book item in list)
         {
-          Console.WriteLine(item.title + ", " + item.pages + " pages, " + item.year);
+          Console.WriteLine(item.ToString()); 
         }
       } 
       else if(printanswer == "title")

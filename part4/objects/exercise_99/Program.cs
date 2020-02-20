@@ -16,6 +16,12 @@ namespace exercise_99
       counter.Decrement();
       counter.PrintValue();
 
+      counter.Decrement();
+      counter.PrintValue();
+
+      counter.Decrement();
+      counter.PrintValue();
+
       counter.Reset();
       counter.PrintValue();
     }

@@ -7,13 +7,13 @@ namespace exercise_110
   {
     public static void Main(string[] args)
     {
-      string answer; 
-      string sQuestion = "Name:";
+      string answer;
+      string sQuestion = "Name: ";
       List<Item> itemList = new List<Item>();
 
       while (true )     
       {
-        Console.WriteLine(sQuestion);
+        Console.Write(sQuestion);
         answer = Console.ReadLine();  
 
         if(answer == "") break;
@@ -21,6 +21,7 @@ namespace exercise_110
         Item newItem = new Item(answer);
         itemList.Add(newItem);
       }
+      Console.WriteLine("");
 
       foreach(Item item in itemList)
       {
@@ -30,7 +31,5 @@ namespace exercise_110
     }
   }
 }
-
-
 
 

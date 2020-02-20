@@ -22,7 +22,7 @@ namespace exercise_102
         public bool Full()
         {
             if(this.value == 5) return true;
-            else return false; 
+            else return false;
         }
 
     }    

@@ -17,7 +17,7 @@ namespace exercise_113
 
     public override string ToString()
     {
-      return this.title + ", " + this.pages + " pages," + this.year;
+      return this.title + ", " + this.pages + " pages, " + this.year;
     }
         
     }
