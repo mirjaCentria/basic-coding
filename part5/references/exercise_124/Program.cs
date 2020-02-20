@@ -7,7 +7,9 @@ namespace exercise_124
     public static void Main(string[] args)
     {
       // Implement your program here!
-
+      NullObject blaa = new NullObject(1);
+      blaa = null;
+      blaa.ChangeValue(2);
       
     }
   }
