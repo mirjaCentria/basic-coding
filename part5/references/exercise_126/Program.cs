@@ -28,6 +28,8 @@ namespace exercise_126
         Console.WriteLine("there was enough money: " + wasSuccessful);
 
         lunchCafeteria.AddMoneyToCard(annesCard, 100);
+        Console.WriteLine("amount of money on the card is " + annesCard.balance + " euros");
+        Console.WriteLine(lunchCafeteria);
 
         wasSuccessful = lunchCafeteria.EatLunch(annesCard);
         Console.WriteLine("there was enough money: " + wasSuccessful);

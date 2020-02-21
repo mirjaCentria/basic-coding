@@ -17,10 +17,11 @@ namespace exercise_126
       // an coffee now costs 2.50 euros
       // increase the amount of cash by the price of an coffee mean and return the change
       // if the payment parameter is not large enough, no coffee is sold and the method should return the whole payment
-      double price = 2.20;
+      double price = 2.50;
       if(payment > price) 
       {
         this.coffeeAmount++;
+        this.money = this.money + price;
         return payment - price;
       }
       else return payment;      
@@ -35,6 +36,7 @@ namespace exercise_126
       if(payment > price) 
       {
         this.lunchAmount++;
+        this.money = this.money + price;
         return payment - price;
       }
       else return payment;       
@@ -45,10 +47,11 @@ namespace exercise_126
       // a coffee costs 2.50 euros
       // if the payment card has enough money, the balance of the card is decreased by the price, and the method returns true
       // otherwise false is returned
-      double price = 2.20;
+      double price = 2.50;
       if(card.balance>= price)
       {
         this.coffeeAmount++;
+        this.money = this.money + price;
         return card.TakeMoney(price);
       }  
       else return false;
@@ -63,6 +66,7 @@ namespace exercise_126
       if(card.balance>= price) 
       { 
         this.lunchAmount++;
+        this.money = this.money + price;
         return card.TakeMoney(price);
       }
       else return false;
@@ -70,7 +74,11 @@ namespace exercise_126
 
     public void AddMoneyToCard(PaymentCard card, double sum)
     {
-      
+      if(this.money>=sum)
+      {
+        card.AddMoney(sum);
+        this.money = this.money + sum;
+      }
     }
 
     public override string ToString()
