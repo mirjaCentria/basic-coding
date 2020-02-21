@@ -17,24 +17,34 @@ namespace exercise_128
     }
 
     public bool LargerThan(Apartment compared)
-    {
-      return false;
+    { 
+      // weird
+      if(this.squares > compared.squares) return true;
+      else return false;
     }
 
     private int Price()
     {
-      return 0;
+      return this.princePerSquare*this.squares;
     }
 
     public int PriceDifference(Apartment compared)
     {
       // Math.Abs returns the absolute value
-      return 0;
+      return Math.Abs(this.Price() - compared.Price());
     }
 
     public bool MoreExpensiveThan(Apartment compared)
     {
-      return false;
+      if(this.Price() > compared.Price()) return true;
+      else return false;
+    }
+
+    
+    public override string ToString()
+    {
+      return " rooms " + this.rooms.ToString() + " price " +  (this.squares*this.princePerSquare).ToString() 
+      + " squares " + this.squares.ToString() + " price/square " + this.princePerSquare.ToString();
     }
   }
 

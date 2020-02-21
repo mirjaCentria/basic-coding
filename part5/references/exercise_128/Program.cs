@@ -10,7 +10,11 @@ namespace exercise_128
       Apartment manhattanStudioApt = new Apartment(1, 16, 5500);
       Apartment atlantaTwoBedroomApt = new Apartment(2, 38, 4200);
       Apartment bangorThreeBedroomApt = new Apartment(3, 78, 2500);
-      
+
+      Console.WriteLine("manhattanStudioApt" + manhattanStudioApt.ToString());                            
+      Console.WriteLine("atlantaTwoBedroomApt" + atlantaTwoBedroomApt.ToString());    
+      Console.WriteLine("bangorThreeBedroomApt" + bangorThreeBedroomApt.ToString());    
+    
       Console.WriteLine(manhattanStudioApt.LargerThan(atlantaTwoBedroomApt));
       Console.WriteLine(bangorThreeBedroomApt.LargerThan(manhattanStudioApt));
 
