@@ -18,8 +18,18 @@ namespace exercise_130
     // BEGIN SOLUTION
     public override bool Equals(object compared)
     {
+      if( this.GetType().Equals(compared.GetType()) )
+      {      
+        Book cc = (Book)compared;
+        if( (this.name == cc.name) && (this.publicationYear == cc.publicationYear) ) return true;
+        else return false;
+      }
+      else return false;
+    }
 
-      return false;
+    public override int GetHashCode()
+    {
+      return this.GetHashCode();
     }
     // END SOLUTION
   }

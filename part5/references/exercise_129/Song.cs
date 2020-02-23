@@ -23,8 +23,18 @@ namespace exercise_129
     // BEGIN SOLUTION
     public override bool Equals(object compared)
     {
- 
-      return false;
+      if( this.GetType().Equals(compared.GetType()) )
+      {      
+        Song cc = (Song)compared;
+        if( (this.name == cc.name) && (this.artist == cc.artist) && (this.durationInSeconds == cc.durationInSeconds) ) return true;
+        else return false;
+      }
+      else return false;
+    }
+
+    public override int GetHashCode()
+    {
+      return this.GetHashCode();
     }
     // END SOLUTION
 

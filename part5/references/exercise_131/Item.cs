@@ -2,7 +2,6 @@ namespace exercise_131
 {
   public class Item
   {
-
     private string identifier;
     private string name;
 
@@ -11,6 +10,7 @@ namespace exercise_131
       this.identifier = identifier;
       this.name = name;
     }
+
     public override string ToString()
     {
       return this.identifier + ": " + this.name;
@@ -18,12 +18,20 @@ namespace exercise_131
 
     public override bool Equals(object compared)
     {
-
       //compare with Item.identifier
-
-      return false;
+      if( this.GetType().Equals(compared.GetType()) )
+      {      
+        Item cc = (Item)compared;
+        if(this.identifier == cc.identifier)  return true;
+        else return false;
       }
+      else return false;
     }
 
+    public override int GetHashCode()
+    {
+      return this.GetHashCode();
+    }
+    
   }
 }

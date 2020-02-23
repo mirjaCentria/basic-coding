@@ -21,16 +21,24 @@ namespace exercise_130
         Console.WriteLine("Publication year:");
         int publicationYear = Convert.ToInt32(Console.ReadLine());
         Book book = new Book(name, publicationYear);
+        bool noCopy = true;
 
         // BEGIN SOLUTION
         // Add unique books to the list.
         // Remember to print
         // "The book is already on the list. Let's not add the same book again."
-        // If the list Contains the book
+        // If the list Contains the {book
+        foreach(Book item in books)
+        {
+          if(item.Equals(book)) 
+          {
+            Console.WriteLine("The book is already on the list. Let's not add the same book again.");
+            noCopy = false;
+            break;
+          }
+        }
 
-
-
-
+        if(noCopy) books.Add(book);
         // END SOLUTION
       }
 
