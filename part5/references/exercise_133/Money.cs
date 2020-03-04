@@ -20,16 +20,35 @@ namespace exercise_133
 
     public Money Plus(Money addition)
     {
-      Money newMoney = new Money(/* Do something here*/);
-      // create a new Money object that has the correct worth
+      Money newMoney = new Money(this.euros, this.cents);
+      newMoney.euros += addition.euros; 
+      newMoney.cents += addition.cents;
 
-      // return the new Money object
+      if(newMoney.cents >= 100)
+      {
+        newMoney.cents -= 100;
+        newMoney.euros += 1;
+      }
+
       return newMoney;
     }
 
     public Money Minus(Money decreaser)
     {
-      Money newMoney = new Money(/* Do something here*/);
+      Money newMoney = new Money(this.euros, this.cents);
+      newMoney.euros -= decreaser.euros; 
+      newMoney.cents -= decreaser.cents;
+      if(newMoney.cents < 0)
+      {
+        newMoney.cents += 100;
+        newMoney.euros -= 1;
+      }
+
+      if(newMoney.euros < 0) 
+      {
+        newMoney.euros = 0;
+        newMoney.cents = 0;
+      }
       // create a new Money object that has the correct worth
 
       // return the new Money object
@@ -38,8 +57,9 @@ namespace exercise_133
 
     public bool LessThan(Money compared)
     {
-      // Do something here
-      return false;
+      if(this.euros < compared.euros) return true;
+      if((this.euros == compared.euros)&&(this.cents < compared.cents)) return true;
+      else return false;
     }
 
     public override string ToString()

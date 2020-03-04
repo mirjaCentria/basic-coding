@@ -9,8 +9,8 @@ namespace ProgramTests
   [TestFixture]
   public class TestProgram
   {
-    string target = "../../../";
-    string current = Directory.GetCurrentDirectory();
+    string target = "../../../"; 
+    string current = Directory.GetCurrentDirectory(); 
 
     [SetUp]
     public void Init()

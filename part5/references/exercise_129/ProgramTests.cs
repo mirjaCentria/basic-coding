@@ -15,7 +15,7 @@ namespace ProgramTests
     [SetUp]
     public void Init()
     {
-      Directory.SetCurrentDirectory(target);
+      Directory.SetCurrentDirectory(target); 
     }
 
     [TearDown]

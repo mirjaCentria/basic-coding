@@ -61,8 +61,8 @@ namespace ProgramTests
     [Test]
     public void TestAreEqual01()
     {
-      Book book = new Book("Novel idea", 2020);
-      Book book2 = new Book("Novel idea", 2020);
+      Book book = new Book("Novel idea", 2020); 
+      Book book2 = new Book("Novel idea", 2020); 
       Assert.AreEqual(book, book2, "Check your Equality!");
     }
 

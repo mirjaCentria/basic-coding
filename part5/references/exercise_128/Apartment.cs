@@ -25,7 +25,7 @@ namespace exercise_128
 
     private int Price()
     {
-      return this.princePerSquare*this.squares;
+      return this.pricePerSquare*this.squares;
     }
 
     public int PriceDifference(Apartment compared)
@@ -43,8 +43,8 @@ namespace exercise_128
     
     public override string ToString()
     {
-      return " rooms " + this.rooms.ToString() + " price " +  (this.squares*this.princePerSquare).ToString() 
-      + " squares " + this.squares.ToString() + " price/square " + this.princePerSquare.ToString();
+      return " rooms " + this.rooms.ToString() + " price " +  (this.squares*this.pricePerSquare).ToString() 
+      + " squares " + this.squares.ToString() + " price/square " + this.pricePerSquare.ToString();
     }
   }
 
