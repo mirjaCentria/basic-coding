@@ -15,6 +15,8 @@ namespace exercise_134
       ReadPoints();
       Console.WriteLine("");
       PrintGradeDistribution();
+      Console.WriteLine("The average of points: {0}", Math.Round(register.AverageOfPoints(), 2));
+      Console.WriteLine("The average of grades: {0}", Math.Round(register.AverageOfGrades(), 2));
     }
 
     public void ReadPoints()

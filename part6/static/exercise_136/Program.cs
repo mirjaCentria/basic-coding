@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace exercise_136
 {
@@ -15,7 +16,7 @@ namespace exercise_136
       HowManyNames(jack);
       HowManyNames(mike);
     }
-
+        //split @" +"
     // Do something here
   }
 }

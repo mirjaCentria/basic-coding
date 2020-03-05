@@ -8,6 +8,7 @@ public class GradeRegister
   public GradeRegister()
   {
     this.grades = new List<int>();
+    this.points = new List<int>();
   }
 
   public void AddGradeBasedOnPoints(int points)
@@ -28,7 +29,7 @@ public class GradeRegister
     return count;
   }
 
-  public static int PointsToGrades(int points)
+  public int PointsToGrades(int points)
   {
     int grade = 0;
 
@@ -83,15 +84,15 @@ public class GradeRegister
   public double AverageOfPoints()
   {
     int sum = 0;
-    double result = 0;
-    foreach(int item in grades)
+    
+    foreach(int item in points)
     {
       sum = sum + item;
     }
  
     if (sum > 0)
     {       
-      return Math.Round((double)sum/grades.Count,2);
+      return Math.Round((double)sum/points.Count,2);
     }
     else return -1;
   
