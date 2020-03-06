@@ -49,9 +49,9 @@ namespace ProgramTests
         Person jack = new Person("Jack The Ripper");
         Person mike = new Person("Mike The Incredible Magic House Mouse");
 
-        Program.HowManyNames(ada);
-        Program.HowManyNames(jack);
-        Program.HowManyNames(mike);
+        Person.HowManyNames(ada);
+        Person.HowManyNames(jack);
+        Person.HowManyNames(mike);
 
         // Restore the original standard output.
         Console.SetOut(stdout);
@@ -78,10 +78,10 @@ namespace ProgramTests
         Person jack = new Person("Jack The Ripper");
         Person mike = new Person("Mike The Incredible Magic House Mouse");
 
-        Program.HowManyNames(ada);
-        Program.HowManyNames(jack);
-        Program.HowManyNames(mike);
-        Program.HowManyNames(mike);
+        Person.HowManyNames(ada);
+        Person.HowManyNames(jack);
+        Person.HowManyNames(mike);
+        Person.HowManyNames(mike);
 
         // Restore the original standard output.
         Console.SetOut(stdout);

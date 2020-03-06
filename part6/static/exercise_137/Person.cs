@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
+
 namespace exercise_136
 {
   public class Person
@@ -18,8 +22,8 @@ namespace exercise_136
 
     public int HowManyNames()
     {
-      // Do something here
-      return 0;
+      string[] names = this.name.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+      return names.Length;
     }
 
     public void GrowOlder()
@@ -30,6 +34,6 @@ namespace exercise_136
     public override string ToString()
     {
       return this.name;
-    }
+    }    
   }
 }

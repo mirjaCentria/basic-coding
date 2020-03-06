@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
+
 namespace exercise_136
 {
   public class Person
@@ -25,5 +29,12 @@ namespace exercise_136
     {
       return this.name;
     }
+    
+    public static void HowManyNames(Person person) 
+    {
+      string[] names = person.name.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+      Console.WriteLine("{0} has {1} names.", person.name, names.Length);
+    }
+
   }
 }

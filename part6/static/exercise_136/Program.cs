@@ -12,9 +12,9 @@ namespace exercise_136
       Person jack = new Person("Jack The Ripper");
       Person mike = new Person("Mike The Incredible Magic Mouse");
 
-      HowManyNames(ada);
-      HowManyNames(jack);
-      HowManyNames(mike);
+      Person.HowManyNames(ada);    
+      Person.HowManyNames(jack);
+      Person.HowManyNames(mike);
     }
         //split @" +"
     // Do something here
