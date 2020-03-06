@@ -32,6 +32,11 @@ public class JokeManager
     public void PrintJokes() 
     {
         Console.WriteLine("Printing the jokes.");
+        
+        if (this.jokes.Count == 0)
+        {
+            Console.WriteLine("Jokes are in short supply.");
+        }
         foreach (string joke in jokes)
         {
             Console.WriteLine(joke);

@@ -67,6 +67,11 @@ public class GradeRegister
     // Hint! You don't need to round the -1, but you do need it for all the other results...
    // return Math.Round(-1.0, 2);
     int sum = 0;
+
+    if(this.grades.Count == 0)
+    {
+      return -1;
+    }
     
     foreach(int item in grades)
     {
