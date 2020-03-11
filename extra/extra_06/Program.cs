@@ -6,7 +6,12 @@ namespace extra_06
   {
     public static void Main(string[] args)
     {
-      // Add your code here:
+
+      int one = Convert.ToInt32(Console.ReadLine());
+      int two = Convert.ToInt32(Console.ReadLine());
+
+      if(one + two < 0) Console.WriteLine("0");
+      else Console.WriteLine(Math.Sqrt(one + two));       
 
     }
   }
