@@ -6,7 +6,8 @@ namespace extra_15
   {
     public static void Main(string[] args)
     {
-      // Add your code here:
+      Cube cc = new Cube(3);
+      System.Console.WriteLine(cc.ToString());
 
     }
   }
