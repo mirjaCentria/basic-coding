@@ -9,7 +9,7 @@ namespace exercise_110
     {
       string answer;
       string sQuestion = "Name: ";
-      List<Item> itemList = new List<Item>();
+      List<Item> items = new List<Item>();
 
       while (true )     
       {
@@ -19,11 +19,11 @@ namespace exercise_110
         if(answer == "") break;
 
         Item newItem = new Item(answer);
-        itemList.Add(newItem);
+        items.Add(newItem);
       }
       Console.WriteLine("");
 
-      foreach(Item item in itemList)
+      foreach(Item item in items)
       {
          Console.WriteLine(item);
 
