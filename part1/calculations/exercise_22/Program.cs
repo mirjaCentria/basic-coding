@@ -11,22 +11,22 @@ namespace exercise_22
         string sLine3 = "Give the third number!";
         string sResult = "";
 
-        int iFirst = 0;
-        int iSecond = 0;
-        int iThird = 0;
+        int first = 0;
+        int second = 0;
+        int third = 0;
         double dResult = 0;
        
         Console.WriteLine(sLine1);
-        iFirst = int.Parse(Console.ReadLine());
+        first = int.Parse(Console.ReadLine());
 
         Console.WriteLine(sLine2);
-        iSecond = int.Parse(Console.ReadLine());
+        second = int.Parse(Console.ReadLine());
 
         Console.WriteLine(sLine3);
-        iThird = int.Parse(Console.ReadLine());
+        third = int.Parse(Console.ReadLine());
 
 
-        dResult = (double)(iFirst + iSecond + iThird)/3; 
+        dResult = (double)(first + second + third)/3; 
         sResult = $"The average is {dResult}";
 
         Console.WriteLine(sResult); //just to be clever ;)

@@ -7,7 +7,7 @@ namespace exercise_26
     public static void Main(string[] args)
     {
         string sLine1 = "Give your age:";
-        string sLine2 = "You´re old";
+        string sLine2 = "You´e old";
 
         int iAge = 0;
         int iLimit = 1900;

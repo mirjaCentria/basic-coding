@@ -12,23 +12,23 @@ namespace exercise_18
         string sLine3 = "Give the third number!";
         string sResult = "The sum is ";
 
-        int iFirst = 0;
-        int iSecond = 0;
+        int first = 0;
+        int second = 0;
         int iThird = 0;
-        int iResult = 0;
+        int result = 0;
        
         Console.WriteLine(sLine1);
-        iFirst = int.Parse(Console.ReadLine());
+        first = int.Parse(Console.ReadLine());
         
         Console.WriteLine(sLine2);
-        iSecond = int.Parse(Console.ReadLine());
+        second = int.Parse(Console.ReadLine());
 
         Console.WriteLine(sLine3);
         iThird = int.Parse(Console.ReadLine());
 
-        iResult = iFirst + iSecond + iThird; 
+        result = first + second + iThird; 
 
-        Console.WriteLine(sResult + iResult);
+        Console.WriteLine(sResult + result);
 
     }
   }

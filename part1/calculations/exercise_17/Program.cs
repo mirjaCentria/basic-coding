@@ -10,19 +10,19 @@ namespace exercise_17
         string sLine2 = "Give the second number!";
         string sResult = "The sum is ";
 
-        int iFirst = 0;
-        int iSecond = 0;
-        int iResult = 0;
+        int first = 0;
+        int second = 0;
+        int result = 0;
        
         Console.WriteLine(sLine1);
-        iFirst = int.Parse(Console.ReadLine());
+        first = int.Parse(Console.ReadLine());
         
         Console.WriteLine(sLine2);
-        iSecond = int.Parse(Console.ReadLine());
+        second = int.Parse(Console.ReadLine());
 
-        iResult = iFirst + iSecond; 
+        result = first + second; 
 
-        Console.WriteLine(sResult + iResult);
+        Console.WriteLine(sResult + result);
 
     }
   }

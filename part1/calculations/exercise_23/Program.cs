@@ -11,38 +11,38 @@ namespace exercise_23
         
         string sResult = "";
 
-        int iFirst = 0;
-        int iSecond = 0;
-        int iResult= 0;
+        int first = 0;
+        int second = 0;
+        int result= 0;
         double dResult = 0;
        
         Console.WriteLine(sLine1);
-        iFirst = int.Parse(Console.ReadLine());
+        first = int.Parse(Console.ReadLine());
 
         Console.WriteLine(sLine2);
-        iSecond = int.Parse(Console.ReadLine());
+        second = int.Parse(Console.ReadLine());
 
 
-        iResult = iFirst + iSecond; 
-        sResult = $"{iFirst} + {iSecond} = {iResult}";
+        result = first + second; 
+        sResult = $"{first} + {second} = {result}";
         Console.WriteLine(sResult); //just to be clever ;)
-        //Console.WriteLine(iFirst + " + " + iSecond + " = " + iResult);
+        //Console.WriteLine(first + " + " + second + " = " + result);
 
-        iResult = iFirst - iSecond; 
-        sResult = $"{iFirst} - {iSecond} = {iResult}";
+        result = first - second; 
+        sResult = $"{first} - {second} = {result}";
         Console.WriteLine(sResult); //just to be clever ;)
-        //Console.WriteLine(iFirst + " - " + iSecond + " = " + iResult);
+        //Console.WriteLine(first + " - " + second + " = " + result);
 
-        iResult = iFirst * iSecond; 
-        sResult = $"{iFirst} * {iSecond} = {iResult}";
+        result = first * second; 
+        sResult = $"{first} * {second} = {result}";
         Console.WriteLine(sResult); //just to be clever ;)
-        //Console.WriteLine(iFirst + " * " + iSecond + " = " + iResult);
+        //Console.WriteLine(first + " * " + second + " = " + result);
 
 
-        dResult = (double)iFirst / iSecond ; 
-        sResult = $"{iFirst} / {iSecond} = {dResult}";
+        dResult = (double)first / second ; 
+        sResult = $"{first} / {second} = {dResult}";
         Console.WriteLine(sResult); //just to be clever ;)
-        //Console.WriteLine(iFirst + " / " + iSecond + " = " + dResult);
+        //Console.WriteLine(first + " / " + second + " = " + dResult);
 
     }
   }

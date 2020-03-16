@@ -11,17 +11,17 @@ namespace exercise_29
         string sLine3 = "The larger number is ";
         string sLine4 = "They are equal!";
 
-        int iFirst = 0;   
-        int iSecond =18;         
+        int first = 0;   
+        int second =18;         
        
         Console.WriteLine(sLine1);
-        iFirst = int.Parse(Console.ReadLine());
+        first = int.Parse(Console.ReadLine());
 
         Console.WriteLine(sLine2);
-        iSecond = int.Parse(Console.ReadLine());
+        second = int.Parse(Console.ReadLine());
 
-        if(iFirst < iSecond)  Console.WriteLine(sLine3 + iSecond + "!");
-          else if( iSecond < iFirst) Console.WriteLine(sLine3 + iFirst +"!");
+        if(first < second)  Console.WriteLine(sLine3 + second + "!");
+          else if( second < first) Console.WriteLine(sLine3 + first +"!");
             else Console.WriteLine(sLine4);
 
     }

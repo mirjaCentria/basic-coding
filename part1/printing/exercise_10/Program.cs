@@ -25,9 +25,9 @@ namespace exercise_10
                 + profession + " meant to them.\nWhen you work as a " + profession + " you meet interesting people.\n" 
                 + name + " enjoys their work as " + profession + ", The end.");
 
-            ///// This works but the test did not like it            
+            /*//// This works but the test did not like it            
             string sStory = $"Here is the story:\nOnce upon a time there was a {profession} called {name}\nOn her way to work, {name} often pondered what being {profession} meant to them. \nWhen you work as a {profession} you meet interesting people.\n{name} enjoys their work as {profession}, The end.";
-            Console.WriteLine(sStory);
+            Console.WriteLine(sStory);*/
             ////
         }
     }

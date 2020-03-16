@@ -7,8 +7,8 @@ namespace exercise_24
     public static void Main(string[] args)
     {
 
-        string sLine1 = "Your speed: ";
-        string sLine2 = "You´re speeding!";
+        string sLine1 = "Your speed:";
+        string sLine2 = "Speeding!";
 
         int iSpeed = 0;
         int iLimit = 120;
