@@ -13,7 +13,7 @@ namespace extra_18
         {
             this.name = name;
             this.latinName = latinName;
-            observations = 1;
+            observations = 0;
         }
 
         public  string GetName()
