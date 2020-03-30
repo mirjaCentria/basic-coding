@@ -21,10 +21,22 @@ namespace Exercise
     public static void PrintValues(Dictionary<string, Book> dictionary)
     {
 
+      foreach( KeyValuePair<string, Book> kvp in dictionary )
+      {
+          System.Console.WriteLine(kvp.Value.ToString());
+      }
     }
     public static void PrintValueIfNameContains(Dictionary<string, Book> dictionary, string text)
     {
-
+      String name = "";
+      foreach( KeyValuePair<string, Book> kvp in dictionary )
+      {
+        name = kvp.Value.name.ToLower();
+        if(name.Contains(text.ToLower()))
+        {
+          System.Console.WriteLine(kvp.Value.ToString());
+        }
+      }
     }
   }
 }
