@@ -8,6 +8,7 @@ namespace Exercise
     {
       SimpleDate d = new SimpleDate(1, 2, 2000);
       Console.WriteLine(d.Equals("heh"));
+      Console.WriteLine(d.Equals("-1"));
       Console.WriteLine(d.Equals(new SimpleDate(5, 2, 2012)));
       Console.WriteLine(d.Equals(new SimpleDate(1, 2, 2000)));
     }

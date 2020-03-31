@@ -1,4 +1,4 @@
-namespace Exercise
+  namespace Exercise
 {
   public class LicensePlate
   {
@@ -11,7 +11,6 @@ namespace Exercise
       this.country = country;
     }
 
-
     public override string ToString()
     {
       return country + " " + liNumber;
@@ -19,12 +18,27 @@ namespace Exercise
 
     public override bool Equals(object compared)
     {
-      return false;
+      if((compared == null) || !this.GetType().Equals(compared.GetType()))
+      {
+        return false;
+      }
+      
+      LicensePlate lp = (LicensePlate)compared;
+                
+      if (!this.liNumber.Equals(lp.liNumber))
+      {
+        return false;
+      }
+      if (!this.country.Equals(lp.country))
+      {
+        return false;
+      }  
+      return true;
     }
 
     public override int GetHashCode()
     {
-      return -1;
+      return this.liNumber.GetHashCode() + this.country.GetHashCode();
     }
   }
 }

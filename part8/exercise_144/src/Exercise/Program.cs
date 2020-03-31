@@ -19,6 +19,7 @@ namespace Exercise
       if (!finnishPlates.Contains(newLi))
       {
         finnishPlates.Add(newLi);
+        Console.WriteLine("Added again: ");
       }
       Console.WriteLine("Finnish: ");
       foreach (LicensePlate plate in finnishPlates)

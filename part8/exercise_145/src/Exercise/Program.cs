@@ -26,6 +26,9 @@ namespace Exercise
 
       Console.WriteLine("Owners:");
       register.PrintOwners();
+
+      Console.WriteLine(register.Get(li1));
+      Console.WriteLine(register.Get(new LicensePlate("FI", "222222")));
     }
   }
 }
