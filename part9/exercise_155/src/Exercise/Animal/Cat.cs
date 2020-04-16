@@ -4,7 +4,7 @@ namespace Exercise
   public class Cat : Animal, INoiseCapable
   {
 
-    public Cat() : this("")
+    public Cat() : this("Cat")
     {
     }
 
@@ -14,9 +14,11 @@ namespace Exercise
 
     public void Purr()
     {
+      System.Console.WriteLine(base.name + " purrs");    
     }
     public void MakeNoise()
     {
+      this.Purr();
     }
 
   }
