@@ -39,17 +39,6 @@ namespace Exercise
         System.Console.WriteLine(iitem.ToString());
       }
       
-      /*
-      item = new Book("aa", 0);
-      System.Console.WriteLine(item.ToString());
-      books.Add(item);
-      
-      books.ToString();
-      foreach(Book iitem in books)
-      {
-        System.Console.WriteLine(iitem.ToString());
-      }
-*/
     }
   }
 }
