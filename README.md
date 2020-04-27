@@ -5837,7 +5837,7 @@ alla oleva:below
 olut:beer
 ```
 
-Read the dictionary file line by line with the method **NextLine**. You can split a line using the string method **Split** like so:
+You can split a line using the string method **Split** like so:
 
 ```cs
 string[] parts = line.split(":");   // split the line based on the ':' character
@@ -5928,4 +5928,7 @@ poista
 So in the beginning the dictionary is loaded from a file, and in the end it is saved back to the file, so that changes made to the dictionary are kept for the next time the dictionary is used.
 
 NOTICE! The exercise also contains a file "testwords.txt" for tests. DO NOT TOUCH THAT FILE!
+<<<<<<< HEAD
 >>>>>>> cdbc91f4e9adf1c922e79bedebd3ebb5687e224b
+=======
+>>>>>>> a3f9eebd1214c4e4a665d5974ec295d53af3dcc3
