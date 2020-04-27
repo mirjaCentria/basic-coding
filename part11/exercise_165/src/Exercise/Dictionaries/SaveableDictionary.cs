@@ -40,18 +40,17 @@ namespace Exercise
     {
         try
         {   
-
             using (StreamReader sr = new StreamReader("../../" + this.file))
             {
                 string line = "";
                 
                 while ((line = sr.ReadLine()) != null)
                 {
-                  System.Console.WriteLine("line {0}",line);
+                 // System.Console.WriteLine("line {0}",line);
                   if(line.Contains(':'))
                   {
                     string[] splittedline = line.Split(':');
-                    System.Console.WriteLine("kv {0} {1}",splittedline[0],splittedline[1]);
+                  //  System.Console.WriteLine("kv {0} {1}",splittedline[0],splittedline[1]);
                     this.Add(splittedline[0], splittedline[1]);  
                   }                 
                 }

@@ -9,7 +9,7 @@ namespace Exercise
       // assume the words.txt contains the original content.
       SaveableDictionary dictionary = new SaveableDictionary("words.txt");
       dictionary.Load();
-      dictionary.Print();
+      //dictionary.Print();
 
       // Translate all the words in the file both ways
       Console.WriteLine(dictionary.Translate("apina"));
