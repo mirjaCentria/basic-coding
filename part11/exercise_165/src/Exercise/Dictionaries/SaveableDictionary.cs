@@ -8,7 +8,6 @@ namespace Exercise
   {
     List<KeyValuePair<string, string> > words;
     KeyValuePair<string, string> kvp;
-    //List <string> list;
     string file;
 
     public SaveableDictionary() 
@@ -27,7 +26,6 @@ namespace Exercise
       {
         if((kvp.Key == word) || (kvp.Value == word) )
         {   
-         //  System.Console.WriteLine("Add {0} {1}",kvp.Key, kvp.Value);
           goto End;     
         }  
       }
@@ -40,17 +38,15 @@ namespace Exercise
     {
         try
         {   
-            using (StreamReader sr = new StreamReader("../../" + this.file))
+            using (StreamReader sr = new StreamReader(this.file))
             {
                 string line = "";
                 
                 while ((line = sr.ReadLine()) != null)
                 {
-                 // System.Console.WriteLine("line {0}",line);
                   if(line.Contains(':'))
                   {
-                    string[] splittedline = line.Split(':');
-                  //  System.Console.WriteLine("kv {0} {1}",splittedline[0],splittedline[1]);
+                    string[] splittedline = line.Split(':');                 
                     this.Add(splittedline[0], splittedline[1]);  
                   }                 
                 }
@@ -61,14 +57,14 @@ namespace Exercise
             Console.WriteLine("The file could not be read:");
             Console.WriteLine(e.Message);
         }
-      return false;
+      return true;
     }
 
     public bool Save()
     {
       try
       {
-        StreamWriter writer = new StreamWriter("../../" + this.file);
+        StreamWriter writer = new StreamWriter(this.file);
         
         foreach(KeyValuePair<string, string> kvp in this.words)
         {        
@@ -80,7 +76,7 @@ namespace Exercise
       {
         Console.WriteLine(e.Message);
       }
-      return false;
+      return true;
     }
 
     public string Translate(string word)
