@@ -16,7 +16,7 @@ namespace Exercise
     {
        // generate a random number which may be any number
       // between one and the number of faces, and then return it
-      return  this.rndom.Next(1,this.numberOfFaces);
+      return  this.rndom.Next(1,this.numberOfFaces + 1);
     }
   }
 }
